@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out Pass Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url("IMG_20220913_091407_627.jpeg");
+            background-size: 1500px 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(240, 220, 168);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pass-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .pass-btn:hover {
+            background-color: #f0f2f5;
+        }
+
+        #outpass {
+            margin-top: 20px;
+            display: none;
+        }
+
+        #outpass img {
+            width: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Out Pass</h1>
+        <p>Please select the pass type:</p>
+        <button class="pass-btn" onclick="window.location.href='https://forms.gle/yAKFWFs1ZqgyTUDQ9'">Day Pass</button>
+        <button class="pass-btn" onclick="window.location.href='https://forms.gle/37Zfxx6xrD2WwyU27'">Night Pass</button>
+
+        <div id="outpass">
+            <p>Out Pass:</p>
+            <img id="outpass-img" alt="Out Pass">
+            <p id="message"></p>
+        </div>
+
+        <div class="footer">
+            <p>Contact your parent/warden for any further assistance.</p>
+        </div>
+    </div>
+
+    <script>
+      
+    </script>
+</body>
+</html>
